@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stevanus Gerald Marconus | Data Scientist</title>
+    <meta
+      name="description"
+      content="Portfolio of Stevanus Gerald Marconus, Data Science student at BINUS University. Machine learning, deep learning, time series and risk analytics projects."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- AOS (scroll animation) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-6 -23 101 101'%3E%3Crect x='-6' y='-23' width='101' height='101' rx='18' fill='%23000'/%3E%3Cg fill='none' stroke-linecap='round'%3E%3Cpath d='M0 0H89V55H0ZM55 0V55M55 34H89M68 34V55' stroke='%23fff' stroke-width='3'/%3E%3Cpath d='M0 55A55 55 0 0 1 55 0A34 34 0 0 1 89 34A21 21 0 0 1 68 55A13 13 0 0 1 55 42A8 8 0 0 1 63 34' stroke='%232dd4bf' stroke-width='6'/%3E%3C/g%3E%3C/svg%3E"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+      <a href="#home" class="logo" aria-label="Home">
+        <svg class="phi-logo" viewBox="-3 -3 95 61" aria-hidden="true">
+          <path class="grid" d="M0 0H89V55H0ZM55 0V55M55 34H89M68 34V55M55 42H68M63 34V42" />
+          <path class="spiral" d="M0 55A55 55 0 0 1 55 0A34 34 0 0 1 89 34A21 21 0 0 1 68 55A13 13 0 0 1 55 42A8 8 0 0 1 63 34A5 5 0 0 1 68 39" />
+        </svg>
+        <span class="logo-text">Stevanus<span class="dot">.</span></span>
+      </a>
+
+      <nav>
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#skill" data-i18n="nav.skill">Skills</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#project" data-i18n="nav.project">Projects</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="extra-nav">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="id">ID</button>
+        </div>
+        <a
+          class="btn-outline"
+          href="assets/CV-Stevanus-Gerald-Marconus.pdf"
+          download
+          ><i class="bx bx-download"></i> <span data-i18n="nav.cv">Resume</span></a
+        >
+      </div>
+
+      <button id="menu" class="hamburger-menu" aria-label="Open menu">
+        <i class="bx bx-menu"></i>
+      </button>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <button id="close-mobile" class="close" aria-label="Close menu">
+          <i class="bx bx-x"></i>
+        </button>
+        <ul>
+          <li><a class="nav-link" href="#home" data-i18n="nav.home">Home</a></li>
+          <li><a class="nav-link" href="#about" data-i18n="nav.about">About</a></li>
+          <li><a class="nav-link" href="#skill" data-i18n="nav.skill">Skills</a></li>
+          <li>
+            <a class="nav-link" href="#experience" data-i18n="nav.experience"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#project" data-i18n="nav.project">Projects</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact</a>
+          </li>
+        </ul>
+        <div class="mobile-extra">
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="id">ID</button>
+          </div>
+          <a
+            class="btn-outline"
+            href="assets/CV-Stevanus-Gerald-Marconus.pdf"
+            download
+            ><i class="bx bx-download"></i>
+            <span data-i18n="nav.cv">Resume</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <p class="hello" data-aos="fade-up">
+                <span class="prompt">$</span> whoami
+              </p>
+              <h1 class="hero-name" data-aos="fade-up" data-aos-delay="100">
+                <span class="n-first">Stevanus</span>
+                <span class="n-mid">Gerald</span>
+                <span class="n-last">Marconus</span>
+              </h1>
+              <p class="hero-tagline" data-aos="fade-up" data-aos-delay="200" data-i18n="hero.title">
+                Turning raw data into <span>decisions</span>
+              </p>
+              <p class="typing" data-aos="fade-up" data-aos-delay="250">
+                <span class="prompt">&gt;</span>
+                <span id="typed"></span><span class="caret">_</span>
+              </p>
+              <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+                <a href="#project" class="push-btn">
+                  <span data-i18n="hero.cta">Show my Work</span>
+                </a>
+                <a href="#contact" class="text-link">
+                  <span data-i18n="hero.contact">Get in touch</span>
+                  <i class="bx bx-right-arrow-alt"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-photo" data-aos="zoom-in" data-aos-delay="150">
+              <!-- golden spiral peeking out behind the photo -->
+              <svg class="phi-bg" viewBox="-2 -2 93 59" aria-hidden="true">
+                <rect x="0" y="0" width="89" height="55" />
+                <path d="M55 0V55M55 34H89M68 34V55M55 42H68M63 34V42" />
+                <path class="spiral" d="M0 55A55 55 0 0 1 55 0A34 34 0 0 1 89 34A21 21 0 0 1 68 55A13 13 0 0 1 55 42A8 8 0 0 1 63 34A5 5 0 0 1 68 39" />
+              </svg>
+              <div class="frame-offset" aria-hidden="true"></div>
+              <div class="frame">
+                <img src="assets/profile.jpg" alt="Stevanus Gerald Marconus" />
+                <!-- "object detection" box around the face -->
+                <div class="bbox" aria-hidden="true">
+                  <span class="bbox-label">data_scientist 0.99</span>
+                </div>
+              </div>
+              <span class="photo-chip">
+                <i class="bx bxs-graduation"></i> BINUS · Data Science
+              </span>
+            </div>
+          </div>
+
+          <div class="stats" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat">
+              <strong>3.76</strong>
+              <span data-i18n="hero.gpa">GPA / 4.00</span>
+            </div>
+            <div class="stat">
+              <strong>19</strong>
+              <span data-i18n="hero.repos">GitHub repositories</span>
+            </div>
+            <div class="stat">
+              <strong>5+</strong>
+              <span data-i18n="hero.comps">data &amp; math competitions</span>
+            </div>
+            <div class="stat">
+              <strong>1</strong>
+              <span data-i18n="hero.journal">published journal</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="content">
+            <h2 data-aos="zoom-in-down" class="title" data-i18n="about.heading">
+              About Me
+            </h2>
+            <div class="about-me">
+              <div data-aos="zoom-out-right" class="profile">
+                <div class="code-card">
+                  <div class="code-bar">
+                    <i></i><i></i><i></i>
+                    <span>about_me.py</span>
+                  </div>
+<pre><code><span class="k">from</span> binus <span class="k">import</span> DataScience
+
+stevanus = DataScience.<span class="f">Student</span>(
+    name=<span class="s">"Stevanus Gerald Marconus"</span>,
+    based_in=<span class="s">"Bogor, Indonesia"</span>,
+    gpa=<span class="n">3.76</span>,
+    stack=[<span class="s">"Python"</span>, <span class="s">"R"</span>, <span class="s">"SQL"</span>],
+    focus=[<span class="s">"finance"</span>, <span class="s">"health"</span>],
+)
+
+stevanus.<span class="f">fit</span>(problem)
+<span class="c"># → insight → decision</span></code></pre>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in-left" class="description">
+                <div class="name-role">
+                  <h3>Stevanus Gerald Marconus</h3>
+                  <div class="role">
+                    <h4>Data Scientist</h4>
+                  </div>
+                </div>
+                <p data-i18n="about.p1">
+                  I'm a Data Science student (B.Sc. Computer Science) at BINUS
+                  University with hands-on experience in research, data
+                  competitions and large-scale data processing. I build
+                  predictive models, analytics pipelines and visualizations with
+                  Python, R, SQL and big-data tools.
+                </p>
+                <p data-i18n="about.p2">
+                  Alongside my studies I worked as a Data Analyst, Data Engineer
+                  and DBA at PT. Angkasa Intan Makmur, where I designed a
+                  database system that replaced manual work and ran
+                  customer-segmentation research.
+                </p>
+                <p data-i18n="about.p3">
+                  I'm most interested in <b>financial analytics</b> and
+                  <b>public health</b>, where a good model directly shapes a
+                  decision. Outside of data, I design UI/UX and build web apps
+                  with Next.js and iOS apps with Swift.
+                </p>
+
+                <ul class="facts">
+                  <li>
+                    <i class="bx bxs-graduation"></i>
+                    <span data-i18n="about.f1">BINUS University · 2024 – 2028</span>
+                  </li>
+                  <li>
+                    <i class="bx bx-map"></i>
+                    <span>Bogor · Jakarta, Indonesia</span>
+                  </li>
+                  <li>
+                    <i class="bx bx-world"></i>
+                    <span data-i18n="about.f3"
+                      >Indonesian · English · Japanese (basic)</span
+                    >
+                  </li>
+                  <li>
+                    <i class="bx bx-target-lock"></i>
+                    <span data-i18n="about.f4">Finance &amp; health analytics</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SKILLS ================= -->
+      <section id="skill" class="skill">
+        <div class="container">
+          <div class="content">
+            <h2 data-aos="zoom-in-down" class="title" data-i18n="skill.heading">
+              Skills
+            </h2>
+
+            <div class="skill-groups">
+              <div class="skill-group" data-aos="fade-up">
+                <h3><span class="idx">01</span> <span data-i18n="skill.g1">Languages &amp; Data</span></h3>
+                <div class="skills">
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/python/python-original.svg" alt="" />
+                    <span>Python</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/r/r-original.svg" alt="" />
+                    <span>R</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/postgresql/postgresql-original.svg" alt="" />
+                    <span>SQL</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pandas/pandas-original.svg" alt="" class="invert" />
+                    <span>Pandas</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/numpy/numpy-original.svg" alt="" />
+                    <span>NumPy</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span>MySQL</span><span>PostgreSQL</span><span>Big Data</span
+                  ><span data-i18n="skill.c3">Database Design</span>
+                </div>
+              </div>
+
+              <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+                <h3><span class="idx">02</span> <span data-i18n="skill.g2">Machine &amp; Deep Learning</span></h3>
+                <div class="skills">
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/scikitlearn/scikitlearn-original.svg" alt="" />
+                    <span>scikit-learn</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/tensorflow/tensorflow-original.svg" alt="" />
+                    <span>TensorFlow</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/keras/keras-original.svg" alt="" />
+                    <span>Keras</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/pytorch/pytorch-original.svg" alt="" />
+                    <span>PyTorch</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span>XGBoost</span><span>LightGBM</span><span>CatBoost</span
+                  ><span>SHAP</span><span>LSTM</span><span>GAN</span>
+                </div>
+              </div>
+
+              <div class="skill-group" data-aos="fade-up" data-aos-delay="200">
+                <h3><span class="idx">03</span> <span data-i18n="skill.g3">Analytics &amp; Visualization</span></h3>
+                <div class="skills">
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/jupyter/jupyter-original.svg" alt="" />
+                    <span>Jupyter</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/matplotlib/matplotlib-original.svg" alt="" />
+                    <span>Matplotlib</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/streamlit/streamlit-original.svg" alt="" />
+                    <span>Streamlit</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span>Seaborn</span><span>Statsmodels</span><span>SciPy</span
+                  ><span>PuLP (LP)</span><span data-i18n="skill.c1">Time Series</span
+                  ><span data-i18n="skill.c2">Mathematical Modeling</span>
+                </div>
+              </div>
+
+              <div class="skill-group" data-aos="fade-up" data-aos-delay="300">
+                <h3><span class="idx">04</span> <span data-i18n="skill.g4">Cloud, Deploy &amp; Tools</span></h3>
+                <div class="skills">
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="" class="invert" />
+                    <span>AWS</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/git/git-original.svg" alt="" />
+                    <span>Git</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/nextjs/nextjs-original.svg" alt="" class="invert" />
+                    <span>Next.js</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/swift/swift-original.svg" alt="" />
+                    <span>Swift</span>
+                  </div>
+                  <div class="skill-box">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons/figma/figma-original.svg" alt="" />
+                    <span>Figma</span>
+                  </div>
+                </div>
+                <div class="chips">
+                  <span>SageMaker</span><span>EC2</span><span>S3</span
+                  ><span>Lambda</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCE ================= -->
+      <section id="experience" class="experience">
+        <div class="container">
+          <div class="content">
+            <h2 data-aos="zoom-in-down" class="title" data-i18n="exp.heading">
+              Experience
+            </h2>
+
+            <div class="exp-grid">
+              <!-- Timeline -->
+              <div class="timeline" data-aos="fade-right">
+                <div class="tl-item">
+                  <span class="tl-date">Apr 2024 – May 2025</span>
+                  <h3>Data Analyst · Data Engineer · DBA</h3>
+                  <p class="tl-org">PT. Angkasa Intan Makmur · Bogor</p>
+                  <ul>
+                    <li data-i18n="exp.w1">
+                      Designed and built the company's database system,
+                      replacing manual workflows.
+                    </li>
+                    <li data-i18n="exp.w2">
+                      Managed and organized calibration-lab result data.
+                    </li>
+                    <li data-i18n="exp.w3">
+                      Ran in-depth analysis, campaign performance reporting and
+                      customer-segmentation research to reach more customers.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tl-item">
+                  <span class="tl-date" data-i18n="exp.d2">Dec 2025 – Present</span>
+                  <h3>Research Activist</h3>
+                  <p class="tl-org">Data Science Club · BINUS</p>
+                  <ul>
+                    <li data-i18n="exp.o1">
+                      Conducts data research with the club's research team.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tl-item">
+                  <span class="tl-date" data-i18n="exp.d3">Apr 2025 – Present</span>
+                  <h3>Member</h3>
+                  <p class="tl-org">Data Seeker · Jakarta</p>
+                  <ul>
+                    <li data-i18n="exp.o2">
+                      Competes in data science and computer science
+                      competitions, and shares competition and industry
+                      experience with members.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tl-item">
+                  <span class="tl-date">Feb 2026 – Jul 2026</span>
+                  <h3>Mentor Partner</h3>
+                  <p class="tl-org">Student Advisory and Support Center · BINUS</p>
+                  <ul>
+                    <li data-i18n="exp.o3">
+                      Tutored peers with explanations tailored to their level to
+                      help raise their grades.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Side: education + achievements -->
+              <div class="side" data-aos="fade-left">
+                <div class="edu-card">
+                  <p class="label" data-i18n="exp.edu">Education</p>
+                  <h3>Universitas Bina Nusantara</h3>
+                  <p data-i18n="exp.degree">
+                    Bachelor of Computer Science · Data Science
+                  </p>
+                  <div class="edu-meta">
+                    <span data-i18n="exp.period">Sep 2024 – Aug 2028 (expected)</span>
+                    <span class="gpa">GPA 3.76 / 4.00</span>
+                  </div>
+                </div>
+
+                <div class="awards">
+                  <p class="label" data-i18n="exp.awards">Achievements</p>
+                  <ul>
+                    <li>
+                      <span class="yr">2026</span>
+                      <span data-i18n="exp.a1"><b>Top 10</b> — FIT Competition</span>
+                    </li>
+                    <li>
+                      <span class="yr">2026</span>
+                      <span data-i18n="exp.a2"><b>Competitor</b> — Data Analytics Competition, COMPFEST</span>
+                    </li>
+                    <li>
+                      <span class="yr">2025</span>
+                      <span data-i18n="exp.a3"><b>Finalist &amp; Master of Data Analysis V</b> — Data Analytics Competition, ITS</span>
+                    </li>
+                    <li>
+                      <span class="yr">2025</span>
+                      <span data-i18n="exp.a4"><b>Semi-finalist</b> — Mathematical Challenge, Festifa ITB</span>
+                    </li>
+                    <li>
+                      <span class="yr">2025</span>
+                      <span data-i18n="exp.a5"><b>Semi-finalist</b> — Data Analyst Competition</span>
+                    </li>
+                    <li>
+                      <span class="yr"><i class="bx bx-book-open"></i></span>
+                      <span data-i18n="exp.a6"><b>Published journal</b> — co-author of a public-perception survey study</span>
+                    </li>
+                    <li>
+                      <span class="yr"><i class="bx bx-award"></i></span>
+                      <span data-i18n="exp.a7"><b>Scholarship</b> — BINUS Student Advisory and Support Center mentoring</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROJECTS ================= -->
+      <section id="project" class="project">
+        <div class="container">
+          <div class="content">
+            <h2 data-aos="zoom-in-down" class="title" data-i18n="proj.heading">
+              Projects
+            </h2>
+            <p class="subtitle" data-aos="fade-up" data-i18n="proj.sub">
+              Selected work. Every project is a notebook or pipeline you can read
+              on GitHub.
+            </p>
+
+            <div class="projects">
+              <!-- 1. Fraud -->
+              <article data-aos="fade-up" class="card">
+                <div class="visual">
+                  <svg viewBox="0 0 200 100" aria-hidden="true">
+                    <g class="bars">
+                      <rect x="14" y="20" width="14" height="70" class="hot" />
+                      <rect x="34" y="34" width="14" height="56" class="hot" />
+                      <rect x="54" y="46" width="14" height="44" />
+                      <rect x="74" y="56" width="14" height="34" />
+                      <rect x="94" y="63" width="14" height="27" />
+                      <rect x="114" y="69" width="14" height="21" />
+                      <rect x="134" y="74" width="14" height="16" />
+                      <rect x="154" y="78" width="14" height="12" />
+                      <rect x="174" y="82" width="14" height="8" />
+                    </g>
+                    <line x1="51" y1="10" x2="51" y2="92" class="cut" />
+                    <text x="56" y="16" class="lbl">top 5%</text>
+                  </svg>
+                  <img src="assets/projects/fraud.jpg" alt="" onerror="this.remove()" />
+                </div>
+                <div class="description">
+                  <div class="tags">
+                    <span>LightGBM</span><span>CatBoost</span><span>Fraud Detection</span>
+                  </div>
+                  <h3 data-i18n="p1.t">Health Insurance Fraud Risk Scoring</h3>
+                  <p data-i18n="p1.d">
+                    Ranks health-insurance claims for audit under a 5% capacity
+                    limit. Hybrid LightGBM + CatBoost with 5-fold CV and isotonic
+                    calibration, optimized for NormalizedRecall@5%.
+                  </p>
+                  <p class="metric"><i class="bx bx-data"></i> <span data-i18n="p1.m">160K claims · 51 features</span></p>
+                  <div class="action">
+                    <a href="https://github.com/StevanusGerM/Health-Insurance-Claim-Fraud-Risk-Scoring-System" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 2. Claim trend -->
+              <article data-aos="fade-up" data-aos-delay="100" class="card">
+                <div class="visual">
+                  <svg viewBox="0 0 200 100" aria-hidden="true">
+                    <path d="M8 80 L28 74 L48 77 L68 66 L88 70 L108 58 L128 52" class="line" />
+                    <path d="M128 52 L148 44 L168 38 L190 26" class="line dashed" />
+                    <path d="M128 52 L148 36 L168 26 L190 12 L190 40 L168 50 L148 52 Z" class="band" />
+                    <circle cx="128" cy="52" r="4" class="pt" />
+                    <text x="134" y="68" class="lbl">+25.5%</text>
+                  </svg>
+                  <img src="assets/projects/claims.jpg" alt="" onerror="this.remove()" />
+                </div>
+                <div class="description">
+                  <div class="tags">
+                    <span>Time Series</span><span>EDA</span><span>Forecasting</span>
+                  </div>
+                  <h3 data-i18n="p2.t">Health Claim Trend &amp; Risk Prediction</h3>
+                  <p data-i18n="p2.d">
+                    Analyzes individual health-insurance claims (Jan 2024 – Jul
+                    2025) after a 25.5% claim surge: finds what drives claim
+                    frequency and severity, then predicts claim trends with ML and
+                    time-series models.
+                  </p>
+                  <p class="metric"><i class="bx bx-data"></i> <span data-i18n="p2.m">19 months · claims + policy data</span></p>
+                  <div class="action">
+                    <a href="https://github.com/StevanusGerM/axa-health-insurance-claim-analysis-and-risk-prediction-" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 3. Rice supply chain -->
+              <article data-aos="fade-up" data-aos-delay="200" class="card">
+                <div class="visual">
+                  <svg viewBox="0 0 200 100" aria-hidden="true">
+                    <path d="M22 70 L60 34 L100 66 L140 30 L178 62" class="line thin" />
+                    <circle cx="22" cy="70" r="9" class="node" />
+                    <circle cx="60" cy="34" r="9" class="node" />
+                    <circle cx="100" cy="66" r="9" class="node hot" />
+                    <circle cx="140" cy="30" r="9" class="node" />
+                    <circle cx="178" cy="62" r="9" class="node" />
+                    <text x="86" y="92" class="lbl">max profit</text>
+                  </svg>
+                  <img src="assets/projects/rice.jpg" alt="" onerror="this.remove()" />
+                </div>
+                <div class="description">
+                  <div class="tags">
+                    <span>Linear Programming</span><span>DEA</span><span>SHAP</span>
+                  </div>
+                  <h3 data-i18n="p3.t">Rice Supply Chain Optimization</h3>
+                  <p data-i18n="p3.d">
+                    Operations-research study across West Java that combines Data
+                    Envelopment Analysis, ML with SHAP and linear programming to
+                    find inefficiencies and maximize profit for every actor in the
+                    chain.
+                  </p>
+                  <p class="metric"><i class="bx bx-data"></i> <span data-i18n="p3.m">5 regencies · 5 supply-chain actors</span></p>
+                  <div class="action">
+                    <a href="https://github.com/StevanusGerM/Rice-Supply-Chain-Optimization" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 4. Credit score -->
+              <article data-aos="fade-up" class="card">
+                <div class="visual">
+                  <svg viewBox="0 0 200 100" aria-hidden="true">
+                    <path d="M50 86 A50 50 0 0 1 150 86" class="track" />
+                    <path d="M50 86 A50 50 0 0 1 132 50" class="arc" />
+                    <line x1="100" y1="86" x2="128" y2="58" class="needle" />
+                    <circle cx="100" cy="86" r="5" class="pt" />
+                    <text x="100" y="22" text-anchor="middle" class="lbl">GOOD</text>
+                  </svg>
+                  <img src="assets/projects/credit.jpg" alt="" onerror="this.remove()" />
+                </div>
+                <div class="description">
+                  <div class="tags">
+                    <span>XGBoost</span><span>AWS</span><span>Streamlit</span>
+                  </div>
+                  <h3 data-i18n="p4.t">Credit Score Prediction on AWS</h3>
+                  <p data-i18n="p4.d">
+                    End-to-end classification pipeline (Random Forest, XGBoost,
+                    LightGBM) that predicts customer credit scores, deployed as a
+                    Streamlit app on AWS with EC2, S3 and Lambda.
+                  </p>
+                  <p class="metric"><i class="bx bx-cloud"></i> <span data-i18n="p4.m">Deployed model · cloud pipeline</span></p>
+                  <div class="action">
+                    <a href="https://github.com/StevanusGerM/Credit-Score-Pred-AWS" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 5. Stock LSTM -->
+              <article data-aos="fade-up" data-aos-delay="100" class="card">
+                <div class="visual">
+                  <svg viewBox="0 0 200 100" aria-hidden="true">
+                    <path d="M8 72 L20 64 L30 70 L42 52 L54 58 L66 44 L78 50 L90 36 L102 42 L114 30 L126 38 L138 24 L150 30 L162 20 L174 28 L190 16" class="line muted" />
+                    <path d="M8 76 L20 68 L30 66 L42 56 L54 54 L66 48 L78 46 L90 40 L102 38 L114 34 L126 32 L138 28 L150 26 L162 24 L174 22 L190 20" class="line" />
+                    <text x="10" y="94" class="lbl">AAPL · AMD</text>
+                  </svg>
+                  <img src="assets/projects/stock.jpg" alt="" onerror="this.remove()" />
+                </div>
+                <div class="description">
+                  <div class="tags">
+                    <span>LSTM</span><span>TensorFlow</span><span>Time Series</span>
+                  </div>
+                  <h3 data-i18n="p5.t">Stock Price Forecasting with LSTM</h3>
+                  <p data-i18n="p5.d">
+                    Forecasts AAPL and AMD closing prices with a stacked LSTM in
+                    TensorFlow/Keras, using windowed inputs, early stopping and
+                    learning-rate scheduling. Evaluated with MSE and MAE.
+                  </p>
+                  <p class="metric"><i class="bx bx-data"></i> <span data-i18n="p5.m">40 years of daily prices</span></p>
+                  <div class="action">
+                    <a href="https://github.com/StevanusGerM/Stock-Price-Prediciton" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 6. cGAN -->
+              <article data-aos="fade-up" data-aos-delay="200" class="card">
+                <div class="visual">
+                  <svg viewBox="0 0 200 100" aria-hidden="true" class="pixels">
+                    <g id="px"></g>
+                  </svg>
+                  <img src="assets/projects/gan.jpg" alt="" onerror="this.remove()" />
+                </div>
+                <div class="description">
+                  <div class="tags">
+                    <span>PyTorch</span><span>cGAN</span><span>Computer Vision</span>
+                  </div>
+                  <h3 data-i18n="p6.t">Satellite Image Generation with cGAN</h3>
+                  <p data-i18n="p6.d">
+                    Conditional GAN in PyTorch that generates 28×28 satellite
+                    images of two classes, storage tanks and parking lots, trained
+                    for 100 epochs.
+                  </p>
+                  <p class="metric"><i class="bx bx-image"></i> <span data-i18n="p6.m">16,016 images · 2 classes</span></p>
+                  <div class="action">
+                    <a href="https://github.com/StevanusGerM/Generative-Adversarial-Network-Image" target="_blank" rel="noopener"><i class="bx bxl-github"></i> GitHub</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <a
+              class="btn-outline wide"
+              href="https://github.com/StevanusGerM?tab=repositories"
+              target="_blank"
+              rel="noopener"
+              data-aos="fade-up"
+              ><i class="bx bxl-github"></i>
+              <span data-i18n="proj.all">See all repositories on GitHub</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="content">
+            <h2 data-aos="zoom-in-down" class="title" data-i18n="contact.heading">
+              Contact
+            </h2>
+            <p class="subtitle" data-aos="fade-up" data-i18n="contact.sub">
+              Have a data problem, an internship or a competition team in mind?
+              Let's talk.
+            </p>
+
+            <div class="contact-wrap">
+              <div class="contact-cards" data-aos="fade-right">
+                <a class="c-card" href="mailto:stevanus.marconus@gmail.com">
+                  <i class="bx bx-envelope"></i>
+                  <div><span>Email</span><b>stevanus.marconus@gmail.com</b></div>
+                </a>
+                <a class="c-card" href="https://www.linkedin.com/in/stevanusgerald" target="_blank" rel="noopener">
+                  <i class="bx bxl-linkedin"></i>
+                  <div><span>LinkedIn</span><b>in/stevanusgerald</b></div>
+                </a>
+                <a class="c-card" href="https://github.com/StevanusGerM" target="_blank" rel="noopener">
+                  <i class="bx bxl-github"></i>
+                  <div><span>GitHub</span><b>StevanusGerM</b></div>
+                </a>
+                <a class="c-card" href="assets/CV-Stevanus-Gerald-Marconus.pdf" download>
+                  <i class="bx bx-file"></i>
+                  <div><span data-i18n="contact.cv">Resume</span><b data-i18n="contact.cvb">Download PDF</b></div>
+                </a>
+              </div>
+
+              <form id="contact-form" data-aos="fade-left" class="contact-form" novalidate>
+                <div class="input">
+                  <input type="text" name="name" required data-i18n-ph="contact.name" placeholder="Name..." />
+                  <input type="email" name="email" required data-i18n-ph="contact.email" placeholder="Email..." />
+                  <input type="text" name="subject" class="full" data-i18n-ph="contact.subject" placeholder="Subject..." />
+                </div>
+                <textarea name="message" required data-i18n-ph="contact.message" placeholder="Message..."></textarea>
+                <p class="form-note" id="form-note" aria-live="polite"></p>
+                <button type="submit" class="btn-solid">
+                  <i class="bx bx-send"></i> <span data-i18n="contact.send">Send Message</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+      <div class="container">
+        <div class="profile">
+          <a href="#home" class="logo">
+            <svg class="phi-logo" viewBox="-3 -3 95 61" aria-hidden="true">
+              <path class="grid" d="M0 0H89V55H0ZM55 0V55M55 34H89M68 34V55M55 42H68M63 34V42" />
+              <path class="spiral" d="M0 55A55 55 0 0 1 55 0A34 34 0 0 1 89 34A21 21 0 0 1 68 55A13 13 0 0 1 55 42A8 8 0 0 1 63 34A5 5 0 0 1 68 39" />
+            </svg>
+            <span class="logo-text">Stevanus<span class="dot">.</span></span>
+          </a>
+          <p data-i18n="footer.about">
+            Data Science student at BINUS University, building models for
+            finance and health decisions.
+          </p>
+          <div class="social-media-container">
+            <a class="social-media" href="https://www.linkedin.com/in/stevanusgerald" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+            <a class="social-media" href="https://github.com/StevanusGerM" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+            <a class="social-media" href="mailto:stevanus.marconus@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="link-container">
+          <div class="col">
+            <h4 data-i18n="footer.focus">Focus</h4>
+            <ul>
+              <li><a href="#project">Machine Learning</a></li>
+              <li><a href="#project">Deep Learning</a></li>
+              <li><a href="#project">Time Series</a></li>
+              <li><a href="#project">Risk Analytics</a></li>
+              <li><a href="#project">Optimization</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 data-i18n="footer.stack">Stack</h4>
+            <ul>
+              <li><a href="#skill">Python · R · SQL</a></li>
+              <li><a href="#skill">scikit-learn</a></li>
+              <li><a href="#skill">TensorFlow · PyTorch</a></li>
+              <li><a href="#skill">XGBoost · LightGBM</a></li>
+              <li><a href="#skill">AWS · Streamlit</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 data-i18n="footer.nav">Navigation</h4>
+            <ul>
+              <li><a href="#home" data-i18n="nav.home">Home</a></li>
+              <li><a href="#about" data-i18n="nav.about">About</a></li>
+              <li><a href="#skill" data-i18n="nav.skill">Skills</a></li>
+              <li><a href="#project" data-i18n="nav.project">Projects</a></li>
+              <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        © <span id="year">2026</span> Stevanus Gerald Marconus
+      </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
