@@ -64,8 +64,18 @@ const i18n = {
     "exp.awards": "Achievements",
     "exp.a1": "<b>Top 10</b> — FIT Competition",
     "exp.a2": "<b>Competitor</b> — Data Analytics Competition, COMPFEST",
-    "exp.a3":
-      "<b>Finalist &amp; Master of Data Analysis V</b> — Data Analytics Competition, ITS",
+    "hl.label": "Highlight · 2025",
+    "hl.title": "Master of Data Analysis V — Data Analysis Competition 2025",
+    "hl.scope": "Southeast Asia",
+    "hl.p1":
+      "DAC is an international data analysis competition for undergraduate students across Southeast Asia, held by the Statistics Student Association of Institut Teknologi Sepuluh Nopember (HIMASTA ITS) as part of <i>Pekan Raya Statistika</i>.",
+    "hl.p2":
+      "Our team made it through the selection rounds, competed in the final in Surabaya, and was awarded the <b>Master of Data Analysis V</b> title.",
+    "hl.s0": "Finalist",
+    "hl.m": "IDR 2M",
+    "hl.s1": "final round in Surabaya",
+    "hl.s2": "prize money",
+    "hl.s3": "Master of Data Analysis",
     "exp.a4": "<b>Semi-finalist</b> — Mathematical Challenge, Festifa ITB",
     "exp.a5": "<b>Semi-finalist</b> — Data Analyst Competition",
     "exp.a6":
@@ -186,8 +196,18 @@ const i18n = {
     "exp.awards": "Prestasi",
     "exp.a1": "<b>Top 10</b> — FIT Competition",
     "exp.a2": "<b>Peserta</b> — Lomba Data Analytics, COMPFEST",
-    "exp.a3":
-      "<b>Finalis &amp; Master of Data Analysis V</b> — Data Analytics Competition, ITS",
+    "hl.label": "Sorotan · 2025",
+    "hl.title": "Master of Data Analysis V — Data Analysis Competition 2025",
+    "hl.scope": "Asia Tenggara",
+    "hl.p1":
+      "DAC adalah kompetisi analisis data internasional untuk mahasiswa S1 se-Asia Tenggara yang diselenggarakan Himpunan Mahasiswa Statistika Institut Teknologi Sepuluh Nopember (HIMASTA ITS) sebagai bagian dari <i>Pekan Raya Statistika</i>.",
+    "hl.p2":
+      "Tim kami lolos tahap seleksi, bertanding di babak final di Surabaya, dan meraih gelar <b>Master of Data Analysis V</b>.",
+    "hl.s0": "Finalis",
+    "hl.m": "Rp2 juta",
+    "hl.s1": "babak final di Surabaya",
+    "hl.s2": "hadiah uang",
+    "hl.s3": "Master of Data Analysis",
     "exp.a4": "<b>Semifinalis</b> — Mathematical Challenge, Festifa ITB",
     "exp.a5": "<b>Semifinalis</b> — Data Analyst Competition",
     "exp.a6":

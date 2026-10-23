@@ -1080,6 +1080,170 @@ header .extra-nav {
   font-size: 18px;
 }
 
+/* ---------- Achievement highlight (DAC 2025) ---------- */
+.highlight {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  width: 100%;
+  max-width: 1150px;
+  border: 2px solid #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.hl-photo {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  background: var(--surface-2);
+}
+
+.hl-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 3 / 2;
+  filter: saturate(0.9);
+  transition: filter 0.4s;
+}
+
+.highlight:hover .hl-photo img {
+  filter: saturate(1.05);
+}
+
+.hl-badge {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.hl-badge i {
+  font-size: 18px;
+}
+
+.hl-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  border-left: 2px solid #fff;
+}
+
+.hl-body .label {
+  color: var(--accent);
+  margin-bottom: 0;
+}
+
+.hl-body h3 {
+  font-size: 1.55rem;
+  line-height: 1.25;
+}
+
+.hl-body > p {
+  color: #d4d4d4;
+  font-size: 15.5px;
+}
+
+.hl-body b {
+  color: #fff;
+}
+
+.hl-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hl-meta > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--mono);
+  font-size: 12.5px;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #d4d4d4;
+}
+
+.hl-meta i {
+  color: var(--accent);
+}
+
+.hl-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.hl-stats div {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #000;
+}
+
+.hl-stats strong {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.hl-stats span {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.35;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .highlight {
+    grid-template-columns: 1fr;
+  }
+
+  .hl-body {
+    border-left: none;
+    border-top: 2px solid #fff;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hl-body {
+    padding: 20px;
+  }
+
+  .hl-body h3 {
+    font-size: 1.3rem;
+  }
+
+  .hl-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hl-stats div:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .hl-badge {
+    font-size: 12px;
+    left: 12px;
+    bottom: 12px;
+  }
+}
+
 /* ---------- Projects ---------- */
 .projects {
   display: grid;
